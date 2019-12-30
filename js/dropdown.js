@@ -187,5 +187,14 @@ $topMain.mouseover(function( ) {
 
 
 /* sub-page */
+$('.sub-page-menu>ul>li').click(function() {
+	if(isActive == 0) {
+		isActive = 1;
+		$(this).find('.sub-page-menu>ul>li>ul>li').classList.add("sub-page-menu-click");
 
+	}else if(isActive == 1) {
+		isActive = 0;
+		$(this).find('.sub-page-menu>ul>li>ul>li').classList.add("sub-page.menu-click");
+	}
+});
 

@@ -545,7 +545,7 @@
 
 /* search:start */
 .search {
-	width:100%; height:400px;
+	width:100%; height:400px; margin:100px 0 100px 0;
 	background:url("../imgs/search/serch.jpg")no-repeat center;
 	background-size:cover;
 	background-attachment: fixed;
@@ -596,15 +596,42 @@
 
 /* footer:start */
 footer {
-	width:100vw; height:300px; margin:0 auto;
-	background:#F9F9F9;
+	width:100%; height:300px; margin:0 auto;
+	border-top:2px solid #F2F2F2;
+	background:#FFFFFF;
 }
 
-footer p { text-align:center; font-size:14px; }
+footer .ft-box {
+	width:1300px; margin:0 auto; padding-top:50px;
+}
+
+.ft-lg-dt {
+	float:left; padding-right:150px;
+}
+
+.ft-lg-mb {
+	display:none;
+}
+
+footer p {
+	float: static;
+	font-size:14px;
+}
 
 footer p:first-child { padding-top:50px; }
 
 footer p:last-child { font-family:'PNR' sans-serif; }
+
+footer i {
+	float:right;
+	margin-top:-36px;
+	font-size: 36px;
+	color: #333;
+}
+
+footer i:hover {
+	color:#E06900;
+}
 /* footer:end */
 
 
@@ -673,9 +700,9 @@ footer p:last-child { font-family:'PNR' sans-serif; }
 }
 
 .sub-page-menu>ul>li>ul {
-	display:none;
+	display:block;
 	width:241px; margin:16px 0 0 -21px; padding:24px 0 24px 20px;
-	background:#F9F9F9;
+	background-color:#F9F9F9;
 	border:1px solid #e2e2e2;
 }
 
